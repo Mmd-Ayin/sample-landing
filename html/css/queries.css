@@ -1,0 +1,482 @@
+/*!  X-Large devices (large desktops, less than 1400px / 16px = 87.5em) */
+@media (max-width: 87.5em) {
+    .hero__title {
+        font-size: 4.2rem;
+    }
+
+    .hero__delivered {
+        flex-flow: column nowrap;
+        gap: var(--padding-sm);
+        align-items: flex-start;
+    }
+
+    .hero__delivered__img:last-child {
+        margin: 0;
+    }
+
+    .primary-heading {
+        font-size: 4.2rem;
+    }
+
+    .meals .meals__title {
+        font-size: 4rem;
+    }
+
+
+    .diet__title {
+        font-size: 2.5rem;
+    }
+
+    .testmonials {
+        padding: 4rem;
+        align-items: center;
+    }
+
+    .primary-heading.testmonial__primary-heading {
+        font-size: 4rem;
+    }
+
+
+    .pricing-card__price {
+        font-size: 5rem;
+    }
+
+    .meals-row-gap {
+        row-gap: 0;
+    }
+
+    .meals-col-gap {
+        column-gap: 4rem;
+    }
+
+    .meal__name {
+        font-size: 2rem;
+    }
+
+    .cta__title {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta__container {
+        padding: 4rem;
+    }
+
+    .cta-section {
+        margin-bottom: 0;
+    }
+}
+
+/*! Large devices (desktops, less than 1200px / 16px = 75em) */
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25% !important;
+    }
+
+    .hero {
+        gap: 2rem;
+    }
+
+    .hero__delivered {
+        flex-flow: column nowrap;
+    }
+
+    .meal__info {
+        padding: 4rem 2rem
+    }
+
+    .pricing.container {
+        margin-bottom: 4rem;
+    }
+
+    .cta__text {
+        margin-bottom: 3rem;
+    }
+
+    .footer {
+        padding: 4.6rem;
+    }
+}
+
+
+/*! Medium devices (tablets, less than 992px / 16px = 62em) */
+@media (max-width: 62em) {
+
+
+    .heading__tertiary {
+        color: var(--color-dark-gery);
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .main-header__link {
+        z-index: 1;
+    }
+
+    .main-header__nav-list {
+        display: none;
+    }
+
+    .toggle-btn--close {
+        display: none;
+    }
+
+    .toggle-btn--menu {
+        background: transparent;
+        font-size: 4rem;
+        display: block;
+    }
+
+    .main-header__nav.open .main-header__nav-list {
+        display: flex;
+        flex-flow: column;
+        list-style: none;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        background: #fcfcfce0;
+        width: 100%;
+        height: 100vh;
+        transform: translate(-50%, 0);
+    }
+
+    .main-header__nav.open .toggle-btn--menu {
+        display: none;
+    }
+
+    .main-header__nav.open .main-heder__nav-link {
+        font-size: 3rem;
+    }
+
+    .main-header__nav.open .toggle-btn--close {
+        display: block;
+    }
+
+
+    .main-header__nav.open .main-header__toggle-btn.toggle-btn--close {
+        z-index: 1;
+        order: 1;
+        background: transparent;
+        font-size: 8rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__text {
+        margin-bottom: 2rem;
+    }
+
+    .hero__btn.btn--primary {
+        margin-bottom: 2rem;
+    }
+
+    .hero__delivered {
+        align-items: flex-start;
+    }
+
+
+    .hero__cta {
+        margin-bottom: 3rem;
+    }
+
+
+    .hero__img {
+        padding: 0;
+    }
+
+    .meals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2.5rem;
+    }
+
+    .meals .meals__title {
+        font-size: 3.2rem;
+        padding-bottom: 4rem;
+    }
+
+    .diet {
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+
+    .diet__title {
+        text-align: center;
+    }
+
+    .meals__diet-list {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .diet__link {
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+
+    .meals__diet-item {
+        width: 25%;
+    }
+
+    .testmonials-section {
+        grid-template-columns: 1fr;
+    }
+
+    .testmonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .container.feature-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 4rem;
+    }
+
+    .cta-section {
+        padding: 4.6rem 0;
+    }
+
+    .cta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta__form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*! Small devices (landscape phones, less than 768px /16px = 49em) */
+@media (max-width: 49em) {
+    .hero {
+        padding-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .hero__img {
+        padding: 0 4rem;
+    }
+
+    .hero__info {
+        padding: 1rem 5rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .primary-heading {
+        padding-bottom: 1.5rem;
+        font-size: 2.75rem;
+    }
+
+    .step__img {
+        height: 35rem;
+    }
+
+    .step__img-box::before {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .step__img-box::after {
+        width: 25rem;
+        height: 25rem
+    }
+
+    .meals .meals__title {
+        font-size: 2.5rem;
+    }
+
+    .primary-heading.testmonial__primary-heading {
+        font-size: 2.75rem;
+    }
+
+    .pricing.container {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .meals__diet-list {
+        justify-content: space-around;
+        column-gap: 0rem;
+    }
+
+    .meals__diet-item {
+        width: 45%;
+    }
+}
+
+
+/*! X-Small devices (portrait phones, less than 576px /16px = 36em) */
+@media (max-width: 36em) {
+
+    /* 50% of 16px = 8px */
+    html {
+        font-size: 50%;
+    }
+    .main-header {
+        padding: 0 3rem;
+    }
+    .hero__info {
+        padding: 1rem;
+    }
+
+    .hero__cta {
+        margin-bottom: 1rem;
+    }
+
+    .hero__delivered {
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .hero__img {
+        padding: 0 2rem;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .setp__text-box {
+        padding: 2rem 0;
+    }
+
+    .steps-container .step__img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .steps-container .step__img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+
+    .how-section {
+        padding: 3.6rem 0;
+    }
+
+    .pricing-card__title {
+        margin-top: 1rem;
+    }
+
+    .pricing-card__price {
+        font-size: 4rem
+    }
+
+    .pricing-card__feature-list {
+        gap: 1rem;
+    }
+
+    .pricing-card__info {
+        margin-bottom: 4rem;
+    }
+
+    .pricing-card {
+        padding: 2rem;
+    }
+
+    .meals-grid {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .meals .meals__title {
+        font-size: 2.25rem;
+        padding-bottom: 2rem;
+    }
+
+    .meal {
+        margin-bottom: 2rem;
+    }
+
+    .meals__diet-list {
+        flex-flow: column;
+    }
+
+    .meal__info {
+        padding: 3rem 4rem;
+    }
+
+    .meals__diet-item {
+        width: 100%;
+    }
+
+    .testmonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing-section {
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card--best-value::before {
+        font-size: 1.5rem;
+        top: 20px;
+    }
+
+    .pricing-card__title {
+        font-size: 1.75rem;
+    }
+
+    .pricing-card__price {
+        font-size: 3.5rem;
+    }
+
+    .pricing-card__dollar-sign {
+        font-size: 2.75rem;
+    }
+
+    .pricing-card__info {
+        margin-bottom: 2rem;
+    }
+
+    .container.feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+        background: transparent;
+    }
+
+    .cta__container {
+        padding: 4rem 2rem;
+        grid-column: 1;
+        z-index: 10;
+        grid-row: 1;
+    }
+
+    .cta__title {
+        font-size: 3rem;
+    }
+
+    .cta__img-backgroud {
+        grid-column: 1;
+        grid-row: 1;
+        background-image: linear-gradient(to bottom left, rgb(227 114 28 / 50%), rgb(227 114 28 / 90%)),
+            url(../img/eating.jpg);
+        border-radius: 10px;
+    }
+}
